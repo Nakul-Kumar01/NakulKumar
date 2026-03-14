@@ -4,7 +4,7 @@ import axios from "axios"
 
 // configuring the axios 
 const axiosClient =  axios.create({
-    baseURL: 'https://NakulKumar.onrender.com',  //base url of backend
+    baseURL: 'https://nakul126.onrender.com',  //base url of backend
     withCredentials: true,  // it means attach cookies with request
     headers: {
         'Content-Type': 'application/json'  // data ka format json hai
