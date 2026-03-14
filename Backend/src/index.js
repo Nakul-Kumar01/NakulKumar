@@ -13,7 +13,7 @@ const cors = require('cors');
 // usefull to start
 app.use(cors({
     // origin: '*',
-    origin: 'https://NakulKumar.onrender.com',
+    origin: 'https://nakulkumar.vercel.app',
     credentials: true
 }))
 app.use(express.json());
@@ -21,12 +21,12 @@ app.use(express.json());
 //Routes
 app.use("/ask",chatRoute);
 app.use("/email",emailRoute);
-// app.get("/health", (req, res) => {  // for uptimeRobot
-//   res.status(200).json({
-//     status: "ok",
-//     message: "Server is running"
-//   });
-// });
+app.get("/health", (req, res) => {  // wakeup backend
+  res.status(200).json({
+    status: "ok",
+    message: "Server is running"
+  });
+});
 
 
 

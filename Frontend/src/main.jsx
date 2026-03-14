@@ -11,6 +11,7 @@ import ContactMe from './components/ContactMe'
 import stores from './store'
 import { Provider } from 'react-redux'
 import Builder from './components/builder'
+import axiosClient from './utils/axiosClient'
 
 
 function Main(){
@@ -20,6 +21,16 @@ function Main(){
           duration: 1000, // Animation duration in milliseconds
           once: true, // Whether animation should happen only once
         });
+
+        const ping = async () => {
+          try{
+            const res = await axiosClient.get("/health");
+          }
+          catch(err){
+            console.log(err);
+          }
+        }
+        ping();
       }, []);
 
 
