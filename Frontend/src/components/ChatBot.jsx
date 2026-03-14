@@ -135,7 +135,7 @@ export default function ChatBot() {
     <div className="relative font-sans">
       <div className="fixed z-90 bottom-8 right-1 sm:right-4 w-[95vw] sm:w-[50vw] lg:w-[25vw] h-[70vh] bg-gray-900 rounded-2xl shadow-2xl flex flex-col">
         {/* Header */}
-        <div className="w-full bg-gradient-to-r from-purple-600 to-blue-600 h-16 rounded-t-2xl flex items-center justify-between">
+        <div className="w-full bg-linear-to-r from-purple-600 to-blue-600 h-16 rounded-t-2xl flex items-center justify-between">
           <h2 className="text-white text-lg font-semibold ml-3">Nakul Kumar<span className="mx-2 animate-pulse text-yellow-400 ring-2 ring-purple-400 rounded-full px-2">🚀</span></h2>
           <div onClick={() => { dispatch(setShowbot()) }} className="text-white mr-4 cursor-pointer bg-gray-800/25 rounded-full w-8 h-8 flex justify-center items-center">Х</div>
         </div>
@@ -153,8 +153,8 @@ export default function ChatBot() {
               <div
                 className={`max-w-[80%] p-4 rounded-2xl shadow-md transition-all
                   ${msg.role === 'user'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white border border-blue-500/30'
-                    : 'bg-gradient-to-r from-gray-700 to-gray-800 text-gray-100 border border-gray-600/30'
+                    ? 'bg-linear-to-r from-blue-600 to-blue-700 text-white border border-blue-500/30'
+                    : 'bg-linear-to-r from-gray-700 to-gray-800 text-gray-100 border border-gray-600/30'
                   } ${msg.role === 'user' ? 'rounded-br-none' : 'rounded-bl-none'}`}
                 dangerouslySetInnerHTML={{ __html: msg.parts[0].text }}
               />
