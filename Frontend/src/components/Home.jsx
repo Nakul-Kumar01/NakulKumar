@@ -45,7 +45,7 @@ export default function Home() {
             <span className="ml-2 text-xs sm:text-sm font-medium bg-purple-500 rounded-full px-2 py-1">new</span>
             <span className="ml-2 text-xs sm:text-sm md:text-base font-medium">ChatBot Available</span>
           </div>
-            <Link className='flex justify-center items-center' to={"/builder"}>
+            {/* <Link className='flex justify-center items-center' to={"/builder"}>
             <div 
             className="relative mx-4 sm:ml-5 w-fit inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 border border-gray-100 rounded-full text-white hover:border-yellow-400 cursor-pointer transition-all duration-300 mb-4 sm:mb-6"
           >
@@ -53,7 +53,7 @@ export default function Home() {
             <span className="ml-2 text-xs sm:text-sm font-medium bg-yellow-500 rounded-full px-2 py-1">new</span>
             <span className="ml-2 text-xs sm:text-sm md:text-base font-medium">Website Builder</span>
           </div>
-            </Link >
+            </Link > */}
           </div>
 
           {/* Animated heading */}
